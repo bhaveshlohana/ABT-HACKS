@@ -1,10 +1,12 @@
 <!DOCTYPE html> 
 <html> 
-<style>  
+<style> 
+	/*set border to the form*/ 
 	
 	form { 
 		border: 3px solid #f1f1f1; 
-	}  
+	} 
+	/*assign full width inputs*/ 
 	
 	input[type=text], 
 	input[type=password] { 
@@ -50,16 +52,18 @@
 		width: 40%; 
 		border-radius: 50%; 
 	} 
+	/*set padding to the container*/ 
 	
 	.container { 
 		padding: 16px; 
 	} 
- 
+	/*set the forgot password text*/ 
 	
 	span.psw { 
 		float: right; 
 		padding-top: 16px; 
 	} 
+	/*set styles for span and cancel button on small screens*/ 
 	
 	@media screen and (max-width: 300px) { 
 		span.psw { 
@@ -87,6 +91,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
+
 <body style="background-color:#33FFDC"> 
 	<div  class="bk-img">
   <nav class="black lighten-1" role="navigation">
@@ -107,25 +112,28 @@
     </div>
   </nav>
 
-	<h2>Register</h2> 
+	<h2>Login Form</h2> 
 	<form> 
 		
 		<div class="container"> 
-			<label><b>First name</b></label> 
-			<input type="text" placeholder="First Name " name="uname" required> 
-
-			<label><b>Last name</b></label> 
-			<input type="text" placeholder="Last Name" name="uname" required> 
-
-			<label><b>Enter Email Address</b></label> 
+			<label><b>Email</b></label> 
 			<input type="text" placeholder="Email" name="uname" required> 
 
-			<label><b>Enter Password</b></label> 
+			<label><b>Password</b></label> 
 			<input type="password" placeholder="Password" name="psw" required> 
 
-			<button type="submit" style="background-color:#00BFFF">Register</button> 
-
+			<button type="submit" style="background-color:#00BFFF">Login</button> 
+			<button type="submit" style="background-color:#00BFFF">Logout</button>
+			<input type="checkbox" checked="checked"> Remember me</input>
 		</div> 
-	</form>
-</body>
-</html>
+
+		<div class="container"> 
+			<button type="button" class="cancelbtn">Cancel</button> 
+			<span class="psw"><a href="#">Forgot password?</a></span> 
+		</div> 
+		
+	</form> 
+
+</body> 
+
+</html> 
